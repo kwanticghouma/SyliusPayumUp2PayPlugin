@@ -1,5 +1,5 @@
 {
-    "name": "vinium/sylius-payum-up2pay-plugin",
+    "name": "kwanticghouma/sylius-payum-up2pay-plugin",
     "type": "sylius-plugin",
     "description": "Up2Pay Gateway",
     "keywords": [
@@ -20,7 +20,7 @@
         "php": "^7.4 || ^8.0 || ^8.1 || ^8.2 || ^8.3",
         "ext-openssl": "*",
         "ext-mbstring": "*",
-        "sylius/sylius": "^1.8",
+        "sylius/sylius": "^1.8 || ^2.0",
         "league/iso3166": "^4.0"
     },
     "require-dev": {
@@ -73,5 +73,11 @@
         ]
     },
     "scripts": {
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/kwanticghouma/SyliusPayumUp2PayPlugin"
+        }
+    ]
 }
