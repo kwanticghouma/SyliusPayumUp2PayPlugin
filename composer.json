@@ -73,11 +73,5 @@
         ]
     },
     "scripts": {
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/kwanticghouma/SyliusPayumUp2PayPlugin"
-        }
-    ]
+    }
 }
