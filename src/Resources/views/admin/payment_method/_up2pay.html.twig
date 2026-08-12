@@ -1,11 +1,20 @@
-sylius_twig_hooks:
-    hooks:
-        'sylius_admin.payment_method.create.content.form.sections.gateway_configuration.up2pay':
-            up2pay_config:
-                template: 'admin/payment_method/_up2pay.html.twig'
-                priority: 0
-
-        'sylius_admin.payment_method.update.content.form.sections.gateway_configuration.up2pay':
-            up2pay_config:
-                template: 'admin/payment_method/_up2pay.html.twig'
-                priority: 0
+<div class="row">
+    <div class="col-12 col-md-6 mb-3">
+        {{ form_row(hookable_metadata.context.form.gatewayConfig.config.site) }}
+    </div>
+    <div class="col-12 col-md-6 mb-3">
+        {{ form_row(hookable_metadata.context.form.gatewayConfig.config.rang) }}
+    </div>
+    <div class="col-12 col-md-6 mb-3">
+        {{ form_row(hookable_metadata.context.form.gatewayConfig.config.identifiant) }}
+    </div>
+    <div class="col-12 col-md-6 mb-3">
+        {{ form_row(hookable_metadata.context.form.gatewayConfig.config.hmac) }}
+    </div>
+    <div class="col-12 col-md-6 mb-3">
+        {{ form_row(hookable_metadata.context.form.gatewayConfig.config.sandbox) }}
+    </div>
+    <div class="col-12 col-md-6 mb-3">
+        {{ form_row(hookable_metadata.context.form.gatewayConfig.config.local) }}
+    </div>
+</div>
